@@ -35,4 +35,4 @@
      </div>
      </div>
 
-        <%@include file="/WEB-INF/view/template/footer.jsp" %>
+        <%@include file="/WEB-INF/template/footer.jsp" %>

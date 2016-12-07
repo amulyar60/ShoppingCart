@@ -24,7 +24,7 @@ $(document).ready(function(){
 
             <p class="lead">This is the manage products page!</p>
         </div>
-     <a href="<spring:url value="/admin/product/addProduct" />" class="btn btn-primary w3-pale-red">Add Product</a>
+     <a href="<spring:url value="/admin/addProduct" />" class="btn btn-primary w3-pale-red">Add Product</a>
         <table class="table table-striped table-hover">
             <thead>
             <tr class="success">

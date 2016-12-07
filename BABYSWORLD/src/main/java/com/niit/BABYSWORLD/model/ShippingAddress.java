@@ -1,6 +1,6 @@
 package com.niit.BABYSWORLD.model;
 
-public class BillingAddress {
+public class ShippingAddress {
 	private String StreetName;
 	private String ApartmentName;
 	public String getStreetName() {

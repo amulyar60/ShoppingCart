@@ -18,7 +18,7 @@
     <div class="carousel-inner" role="listbox">
         <div class="item active">
             <img class="first-slide home-image" width="900" height="600"
-             src="<c:url value="/resource/images/carousel image1.jpg" />"
+             src="<c:url value="/resources/images/carousel image1.jpg" />"
              alt="First slide">
 
             <div class="container">
@@ -106,7 +106,7 @@
 <div class="col-md-4">
   <h2>STROLLERS</h2>
   <p>Stroller's are too good in quality </p> 
-  <a class="btn btn-default" href="<c:url value="/productList?searchCondition=$" />" target="_blank">            
+  <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />" target="_blank">            
  <img class="img-circle" width="250" height="150"
                  src="<c:url value="/resources/images/thumbnail image3.jpg" />"
                  alt="Strollers">

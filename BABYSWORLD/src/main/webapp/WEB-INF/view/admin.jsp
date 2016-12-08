@@ -17,7 +17,7 @@
         </c:if>
 
         <h3>
-            <a href="<c:url value="/admin/productInventorys" />" >productInventory</a>
+            <a href="<c:url value="/admin/productInventory" />" >productInventory</a>
         </h3>
       </div>
     </div>

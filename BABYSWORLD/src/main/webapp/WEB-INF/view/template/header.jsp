@@ -38,7 +38,7 @@
        <li><a class="w3-hover-lime" href="<c:url value="/product/productList/all" />"><span class="glyphicon glyphicon-folder-open"></span>Products</a></li>
        <li><a class="w3-hover-purple" href="<c:url value="/about" />"><span class="glyphicon glyphicon-user"></span>About Us</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right w3-pale-red ">
+    <ul class="nav navbar-nav navbar-right w3-pale-red">
      <c:if test="${pageContext.request.userPrincipal.name != null}">
        <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
         <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>

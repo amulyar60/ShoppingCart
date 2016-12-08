@@ -87,5 +87,10 @@ public class Customer implements Serializable{
         this.enabled = enabled;
     }
 
+	public Cart getCart() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
   }
 

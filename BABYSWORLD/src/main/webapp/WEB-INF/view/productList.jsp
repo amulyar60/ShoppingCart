@@ -42,7 +42,7 @@
                     <td >${product.productCondition}</td>
                     <td >${product.productPrice}</td>
                     <td >${product.unitInStock}</td>
-                    <td><a href="<spring:url value="/product/${product.productId}" />"
+                    <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
                     ><span class="glyphicon glyphicon-ok-circle"></span></a></td>
                 </tr>
             </c:forEach>

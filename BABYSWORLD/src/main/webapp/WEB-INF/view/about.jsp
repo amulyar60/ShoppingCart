@@ -1,4 +1,4 @@
-<%@include file="/WEB-INF/view/template/header.jsp" %>
+﻿<%@include file="/WEB-INF/views/template/header.jsp" %>
 </head>
 <style>
 h2 {

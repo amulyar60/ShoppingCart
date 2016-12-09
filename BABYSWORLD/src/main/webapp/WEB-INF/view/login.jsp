@@ -11,7 +11,7 @@
                 <div class="msg">${msg}</div>
             </c:if>
 
-            <form name="loginForm" action="<c:url value="/j_spring_security_check" />" method="post">
+            <form name="loginForm" action="<c:url value="/jsecurity_check" />" method="post">
                 <c:if test="${not empty error}">
                     <div class="error" style="color: #ff0000;">${error}</div>
                 </c:if>

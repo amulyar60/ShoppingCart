@@ -41,7 +41,7 @@
 
         <div class="form-group">
             <label for="condition">Condition</label>
-            <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition"
+            <label class="checkbox-inline"><form:radiobutton path="productConditions" id="condition"
                                                              value="new" />New</label>
             <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition"
                                                              value="used" />Used</label>
@@ -72,7 +72,7 @@
 
         <br><br>
         <input type="submit" value="submit" class="btn btn-default w3-pale-red">
-        <a href="<c:url value="/admin/productInventory" />" class="btn btn-default w3-pale-red">Cancel</a>
+        <a href="<c:url value="//productInventory" />" class="btn btn-default w3-pale-red">Cancel</a>
         </form:form>
 </div>
 </div>

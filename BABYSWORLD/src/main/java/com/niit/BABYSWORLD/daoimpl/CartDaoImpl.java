@@ -29,8 +29,8 @@ import com.niit.BABYSWORLD.service.CustomerOrderService;
 
 	    public void update(Cart cart) {
 	        int cartId = cart.getCartId();
-	        //double grandTotal = customerOrderService.getCustomerOrderGrandTotal(cartId);
-	       // cart.setGrandTotal(grandTotal);
+	        double grandTotal = customerOrderService.getCustomerOrderGrandTotal(cartId);
+	       cart.setGrandTotal(grandTotal);
 
 	        Session session = sessionFactory.getCurrentSession();
 	        session.saveOrUpdate(cart);

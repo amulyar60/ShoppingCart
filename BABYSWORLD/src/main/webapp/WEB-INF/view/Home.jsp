@@ -1,4 +1,4 @@
-<%@include file="/WEB-INF/view/template/header.jsp" %>
+<%@include file="/WEB-INF/views/template/header.jsp" %>
 <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -43,7 +43,7 @@
         </div>
         <div class="item">
             <img class="third-slide home-image" width="900" height="600"                
-             src="<c:url value="/resources/images/carousel image3.jpg" />"
+             src="<c:url value="/resource/images/carousel image3.jpg" />"
                  alt="third slide">
 
             <div class="container">

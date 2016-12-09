@@ -18,12 +18,13 @@ public class CartController {
     @Autowired
     private CustomerService customerService;
 
-    /*@RequestMapping
+    @RequestMapping
     public String getCart(@AuthenticationPrincipal User activeUser){
         Customer customer = customerService.getCustomerByUsername (activeUser.getUsername());
         int cartId = customer.getCart().getCartId();
+
         return "redirect:/customer/cart/"+cartId;
-    }*/
+    }
 
     @RequestMapping("/{cartId}")
     public String getCartRedirect(@PathVariable (value = "cartId") int cartId, Model model) {

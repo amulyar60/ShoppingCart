@@ -1,10 +1,16 @@
 package com.niit.BABYSWORLD.model;
-import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.persistence.*;
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Customer implements Serializable{
@@ -30,7 +36,19 @@ public class Customer implements Serializable{
 
     private boolean enabled;
 
-    
+    @OneToOne
+    @JoinColumn(name="billingAddressId")
+    private BillingAddress billingAddress;
+
+    @OneToOne
+    @JoinColumn(name="shippingAddressId")
+    private ShippingAddress shippingAddress;
+
+    @OneToOne
+    @JoinColumn(name = "cartId")
+    @JsonIgnore
+    private Cart cart;
+
     public int getCustomerId() {
         return customerId;
     }
@@ -87,10 +105,27 @@ public class Customer implements Serializable{
         this.enabled = enabled;
     }
 
-	public Cart getCart() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public BillingAddress getBillingAddress() {
+        return billingAddress;
+    }
 
-  }
+    public void setBillingAddress(BillingAddress billingAddress) {
+        this.billingAddress = billingAddress;
+    }
 
+    public ShippingAddress getShippingAddress() {
+        return shippingAddress;
+    }
+
+    public void setShippingAddress(ShippingAddress shippingAddress) {
+        this.shippingAddress = shippingAddress;
+    }
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+}

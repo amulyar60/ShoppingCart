@@ -4,8 +4,13 @@
 <br>
 <br>
 <br>
-
-<br>
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
 <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -17,13 +22,13 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide home-image"
-             src="<c:url value="/resources/images/A.jpg" />"
+            <img class="first-slide home-image" width="900" height="600"
+             src="<c:url value="/resources/images/carousel image1.jpg" />"
              alt="First slide">
 
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Welcome to Cosemtics</h1>
+                    <h1>WELCOME TO BABYSWORLD</h1>
 
                     
 
@@ -31,8 +36,8 @@
             </div>
         </div>
         <div class="item">
-            <img class="second-slide home-image"
-                 src="<c:url value="/resources/images/B.png" />"
+            <img class="second-slide home-image" width="900" height="600"
+                 src="<c:url value="/resources/images/carousel image2.jpg" />"
                  alt="Second slide">
 
             <div class="container">
@@ -42,9 +47,20 @@
             </div>
         </div>
         <div class="item">
-            <img class="third-slide home-image"
-                 src="<c:url value="/resources/images/G.jpg" />"
-                 alt="Third slide">
+            <img class="third-slide home-image" width="900" height="600"                
+             src="<c:url value="/resources/images/carousel image3.jpg" />"
+                 alt="third slide">
+
+            <div class="container">
+                <div class="carousel-caption">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img class="fourth-slide home-image" width="900" height="600"
+                 src="<c:url value="/resources/images/carousel image4.jpg" />"
+                 alt="fourth slide">
 
             <div class="container">
                 <div class="carousel-caption">
@@ -62,13 +78,8 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<!-- /.carousel -->
 
-
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
-
+<!-- Thumbnail images -->
 <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
@@ -76,32 +87,31 @@
         <div class="col-lg-4">
             <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />"
                role="button">
-                <img class="img-circle" src="<c:url value="/resources/images/1.jpg" />" alt=" " width="140" height="140"></a>
+                <img class="img-circle" src="<c:url value="/resources/images/thumbnail image1.jpg" />" alt=" " width="140" height="140"></a>
 
             
-        </div><!-- /.col-lg-4 -->
-
-
-
+        </div>
     <div class="row">
         <div class="col-lg-4">
             <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />"
                role="button">
-                <img class="img-circle" src="<c:url value="/resources/images/2.jpg" />" alt=" " width="140" height="140"></a>
+                <img class="img-circle" src="<c:url value="/resources/images/thumbnail image2.jpg" />" alt=" " width="140" height="140"></a>
 
             
-        </div><!-- /.col-lg-4 -->
+        </div>
         
 
     <div class="row">
         <div class="col-lg-4">
             <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />"
                role="button">
-                <img class="img-circle" src="<c:url value="/resources/images/3.jpg" />" alt=" " width="140" height="140"></a>
+                <img class="img-circle" src="<c:url value="/resources/images/thumbnail image3.jpg" />" alt=" " width="140" height="140"></a>
 
            
-        </div><!-- /.col-lg-4 -->
-
+        </div>
+        </div>
+        </div>
+        </div>
 
     </div><!-- /.row -->
 

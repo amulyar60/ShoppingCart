@@ -20,20 +20,21 @@ $(document).ready(function(){
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Product Inventory Page</h1>
+            <h1>Manage products Page</h1>
 
-            <p class="lead">This is the product inventory page!</p>
+            <p class="lead">This is the manage products page!</p>
         </div>
+        <a href="<spring:url value="/admin/product/addProduct" />" class="btn btn-primary w3-pale-red">Add Product</a>
 
         <table class="table table-striped table-hover">
             <thead>
             <tr class="success">
-                <th>Photo Thumb</th>
-                <th>Product Name</th>
-                <th>Category</th>
-                <th>Condition</th>
-                <th>Price</th>
-                <th>View/Delete/Edit </th>
+                <th class="w3-pale-red">Photo Thumb</th>
+                <th class="w3-pale-red">Product Name</th>
+                <th class="w3-pale-red">Category</th>
+                <th class="w3-pale-red">Condition</th>
+                <th class="w3-pale-red">Price</th>
+                <th class="w3-pale-red">View/Delete/Edit </th>
             </tr>
             </thead>
             <tbody>
@@ -45,13 +46,13 @@ $(document).ready(function(){
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
-                    <td>${product.productPrice} USD</td>
+                    <td>${product.productPrice}</td>
                     <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
-                    ><span class="glyphicon glyphicon-info-sign"></span></a>
+                    ><span class="glyphicon glyphicon-eye-open"></span></a>
                         <a href="<spring:url value="/admin/product/deleteProduct/${product.productId}" />"
-                        ><span class="glyphicon glyphicon-remove"></span></a>
+                        ><span class="glyphicon glyphicon-trash"></span></a>
                         <a href="<spring:url value="/admin/product/editProduct/${product.productId}" />"
-                        ><span class="glyphicon glyphicon-pencil"></span></a>
+                        ><span class="glyphicon glyphicon-erase"></span></a>
                     </td>
                 </tr>
                 </c:forEach>
@@ -61,8 +62,4 @@ $(document).ready(function(){
         </div>
         </div>
         </div>
-        
-
-        <a href="<spring:url value="/admin/product/addProduct" />" class="btn btn-primary">Add Product</a>
-
         <%@include file="/WEB-INF/views/template/footer.jsp" %>

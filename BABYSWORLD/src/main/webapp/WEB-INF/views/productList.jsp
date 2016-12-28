@@ -25,12 +25,12 @@
         <table class="table table-striped table-hover">
             <thead>
             <tr class="bg-success">
-                <th>Photo Thumb</th>
-                <th>Product Name</th>
-                <th>Category</th>
-                <th>Condition</th>
-                <th>Price</th>
-                <th></th>
+                <th class="w3-pale-red">Photo Thumb</th>
+                <th class="w3-pale-red">Product Name</th>
+                <th class="w3-pale-red">Category</th>
+                <th class="w3-pale-red">Condition</th>
+                <th class="w3-pale-red">Price</th>
+                <th class="w3-pale-red">UnitInstock</th>
             </tr>
             </thead>
             <c:forEach items="${products}" var="product">
@@ -40,11 +40,13 @@
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
-                    <td>${product.productPrice} USD</td>
+                    <td>${product.productPrice}</td>
                     <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
-                    ><span class="glyphicon glyphicon-info-sign"></span></a></td>
+                    ><span class="glyphicon glyphicon-ok-circle"></span></a></td>
                 </tr>
             </c:forEach>
         </table>
+        </div>
+        </div>
 
 <%@include file="/WEB-INF/views/template/footer.jsp" %>

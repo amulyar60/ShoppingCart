@@ -109,9 +109,11 @@
         </div>
 
         <br><br>
-        <input type="submit" value="submit" class="btn btn-default">
-        <a href="<c:url value="/" />" class="btn btn-default">Cancel</a>
+        <input type="submit" value="submit" class="btn btn-default w3-pale-red">
+        <a href="<c:url value="/" />" class="btn btn-default w3-pale-red">Cancel</a>
         </form:form>
+        </div>
+        </div>
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>

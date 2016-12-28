@@ -28,6 +28,7 @@
 
     <!-- Carousel CSS -->
     <link href="<c:url value="/resources/css/carousel.css" />" rel="stylesheet">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
     <!-- Main CSS -->
     <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
@@ -39,12 +40,13 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
-<div class="navbar-wrapper">
-    <div class="container">
+<nav class="navbar navbar-inverse w3-pale-red">
+<div class="container-fluid">
+    <div class="navbar-header">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-static-top w3-pale-red">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header w3-pale-red">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                             aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -58,19 +60,19 @@
 
     
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="<c:url value="/" /> ">Home</a></li>
-                        <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
+                    <ul class="nav navbar-nav w3-pale-red">
+                        <li><a class="w3-hover-red" href="<c:url value="/" /> "><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                        <li><a class="w3-hover-lime" href="<c:url value="/product/productList/all" />"><span class="glyphicon glyphicon-folder-open"></span>Products</a></li>
                         
                         
-                        <li><a href="<c:url value="/about" />">About Us</a></li>
+                        <li><a class="w3-hover-purple"href="<c:url value="/about" />"><span class="glyphicon glyphicon-user"></span>About Us</a></li>
                     </ul>
 
   
-                    <ul class="nav navbar-nav pull-right">
+                    <ul class="nav navbar-nav pull-right w3-pale-red">
                         <c:if test="${pageContext.request.userPrincipal.name != null}">
                             <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
-                            <li><a href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+                            <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
                             <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
                                 <li><a href="<c:url value="/customer/cart" />">Cart</a></li>
                             </c:if>
@@ -79,13 +81,15 @@
                             </c:if>
                         </c:if>
                         <c:if test="${pageContext.request.userPrincipal.name  == null}">
-                        <li><a href="<c:url value="/login/" />">Login</a></li>
-                        <li><a href="<c:url value="/register" />">Register</a></li>
+                        <li><a class="w3-hover-green"  href="<c:url value="/login/" />"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                        <li><a class="w3-hover-pink" href="<c:url value="/register" />">Sign-up</a></li>
                         </c:if>
                     </ul>
                 </div>
+            </div>
             </div>
         </nav>
 
     </div>
 </div>
+</nav>

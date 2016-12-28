@@ -20,11 +20,11 @@
         <div class="form-group">
             <label for="category">Category</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="casual" />Facial</label>
+                                                             value="casual" />Dresses</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="wedding" />Internal</label>
+                                                             value="wedding" />Toys</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="seasonal" />External</label>
+                                                             value="seasonal" />Stroller's</label>
         </div>
 
         <div class="form-group">

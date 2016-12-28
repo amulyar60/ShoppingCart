@@ -22,11 +22,11 @@
         <div class="form-group">
             <label for="category">Category</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="instrument" />Casual Wear</label>
+                                                             value="instrument" />Dresses</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="record" />Wedding Special</label>
+                                                             value="record" />Toys</label>
             <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category"
-                                                             value="accessory" />Seasonal</label>
+                                                             value="accessory" />Stroller's</label>
         </div>
 
         <div class="form-group">
@@ -71,9 +71,11 @@
         </div>
 
         <br><br>
-        <input type="submit" value="submit" class="btn btn-default">
-        <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
+        <input type="submit" value="submit" class="btn btn-default w3-pale-red">
+        <a href="<c:url value="/admin/productInventory" />" class="btn btn-default w3-pale-red">Cancel</a>
         </form:form>
+        </div>
+        </div>
 
 
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
